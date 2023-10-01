@@ -1,6 +1,3 @@
-Certainly! Here's a modified version of the README content for your repository "infiniteverse-botnet" with the relevant information:
-
-```markdown
 # Infinite Verse Botnet
 
 **This is a beginner-friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start, feel free to watch the videos linked below and read the contribution rules. Happy Learning <3 💙 !!**
