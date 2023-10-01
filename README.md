@@ -100,5 +100,3 @@ git merge upstream/master
 
 ###### We will do our best to merge as much as possible from everyone. However, time is limited <3
 ```
-
-Replace `"YourGitHubUsername"` with your actual GitHub username in the URLs and instructions to make it specific to your repository.
