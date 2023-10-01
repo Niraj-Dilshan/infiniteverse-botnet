@@ -26,7 +26,7 @@ P.S. Star ⭐ and Share this repository, if you had fun!! 😍
 
 Open terminal
 ```
-git clone https://github.com/YourGitHubUsername/infiniteverse-botnet.git
+git clone https://github.com/Niraj-Dilshan/infiniteverse-botnet.git
 ```
 
 - Navigate to the project directory.
