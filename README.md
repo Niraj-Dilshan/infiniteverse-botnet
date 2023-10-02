@@ -99,4 +99,3 @@ git merge upstream/master
   - For the open-source community engagement and learning how to contribute to open source.
 
 ###### We will do our best to merge as much as possible from everyone. However, time is limited <3
-```
