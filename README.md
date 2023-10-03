@@ -13,7 +13,6 @@ P.S. Star ⭐ and Share this repository, if you had fun!! 😍
 - You can make small projects on Python or any other technology.
 - Do NOT remove other content.
 - Styling/code can be pretty, ugly, or stupid, big or small as long as it works.
-- Add your name to the contributorsList file.
 - Try to keep pull requests small to minimize merge conflicts.
 
 ## Mandatory Step :
