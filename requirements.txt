@@ -31,7 +31,7 @@ filelock==3.12.4
 fonttools==4.42.1
 fqdn==1.5.1
 gitdb==4.0.10
-GitPython==3.1.36
+GitPython==3.1.41
 idna==3.4
 ipykernel==6.25.2
 ipython==8.15.0
